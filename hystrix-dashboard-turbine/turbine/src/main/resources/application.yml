@@ -1,0 +1,25 @@
+server:
+  port: 6002
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka7001:7001/eureka
+spring:
+  application:
+    name: turbine
+
+turbine:
+  # 监控的应用名称，多个以逗号隔开
+  app-config: consumer-ribbon,consumer-ribbon-9003
+  aggregator:
+    # 指定聚合哪些集群，默认为 default
+    clusterConfig: default
+  # 指定集群名称为 default
+  clusterNameExpression: new String("default")
+
+
+
+
+
+

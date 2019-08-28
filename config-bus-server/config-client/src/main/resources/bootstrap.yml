@@ -1,0 +1,41 @@
+#服务启动端口号
+server:
+  port: 9010
+
+#服务名称(服务注册到eureka名称)
+spring:
+  application:
+    name: config-client   #对应config-server所获取的配置文件的{application}
+  cloud:
+    config:
+      #读取后缀  对应config-server所获取的配置文件的{profile}
+      profile: dev
+      label: master #读取git仓库分支 对应config-server所获取的配置文件的{label}
+      #读取config-server注册地址
+      discovery:
+        service-id: config-server
+        enabled: true
+  bus:
+    trace:
+      enabled: true
+  rabbitmq:
+    host: 192.168.36.133
+    port: 5672
+    username: guest
+    password: guest
+
+#客户端注册进eureka服务列表内
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka7001:7001/eureka
+
+ #开启监控断点
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+
+
