@@ -1,11 +1,11 @@
 #服务启动端口号
 server:
-  port: 9003
+  port: 9001
 
 #服务名称(服务注册到eureka名称)
 spring:
   application:
-    name: consumer-ribbon
+    name: consumer
 #客户端注册进eureka服务列表内
 eureka:
   client:

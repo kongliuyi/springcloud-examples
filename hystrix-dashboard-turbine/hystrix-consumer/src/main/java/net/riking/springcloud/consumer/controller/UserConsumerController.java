@@ -1,7 +1,7 @@
-package net.riking.springcloud.consumer.ribbon.controller;
+package net.riking.springcloud.consumer.controller;
 
 import com.netflix.hystrix.strategy.concurrency.HystrixRequestContext;
-import net.riking.springcloud.consumer.ribbon.service.impl.UserService;
+import net.riking.springcloud.consumer.service.impl.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;

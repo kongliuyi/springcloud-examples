@@ -26,6 +26,8 @@
         <option value="$PROJECT_DIR$/config-bus-server/config-client/pom.xml" />
         <option value="$PROJECT_DIR$/config-bus-server/config-eureka/pom.xml" />
         <option value="$PROJECT_DIR$/config-bus-server/config-server/pom.xml" />
+        <option value="$PROJECT_DIR$/eureka-provider-consumer/eureka-consumer/pom.xml" />
+        <option value="$PROJECT_DIR$/eureka-provider-consumer/eureka-provider/pom.xml" />
       </list>
     </option>
   </component>

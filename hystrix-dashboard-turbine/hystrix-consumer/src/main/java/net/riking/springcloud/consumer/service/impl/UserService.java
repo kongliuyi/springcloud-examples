@@ -1,4 +1,4 @@
-package net.riking.springcloud.consumer.ribbon.service.impl;
+package net.riking.springcloud.consumer.service.impl;
 
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import com.netflix.hystrix.contrib.javanica.cache.annotation.CacheResult;

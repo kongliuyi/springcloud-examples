@@ -35,8 +35,6 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="consumer-ribbon" target="1.8" />
-      <module name="eureka-consumer" target="1.8" />
-      <module name="eureka-provider" target="1.8" />
       <module name="provider" target="1.8" />
     </bytecodeTargetLevel>
   </component>
@@ -46,6 +44,7 @@
       <module name="config-bus-server" options="-parameters" />
       <module name="config-client" options="-parameters" />
       <module name="config-eureka" options="-parameters" />
+      <module name="config-server" options="-parameters" />
       <module name="consumer-ribbon" options="-parameters" />
       <module name="eureka" options="-parameters" />
       <module name="eureka-cluster-7001" options="-parameters" />

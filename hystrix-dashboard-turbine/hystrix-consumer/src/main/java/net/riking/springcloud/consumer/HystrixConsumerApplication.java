@@ -1,4 +1,4 @@
-package net.riking.springcloud.consumer.ribbon;
+package net.riking.springcloud.consumer;
 
 import com.netflix.hystrix.contrib.metrics.eventstream.HystrixMetricsStreamServlet;
 import org.springframework.boot.SpringApplication;
@@ -12,9 +12,9 @@ import org.springframework.web.client.RestTemplate;
 @SpringBootApplication
 @EnableDiscoveryClient
 @EnableCircuitBreaker //开启服务保护机制
-public class RibbonConsumerApplication {
+public class HystrixConsumerApplication {
     public static void main(String[] args) {
-        SpringApplication.run(RibbonConsumerApplication.class, args);
+        SpringApplication.run(HystrixConsumerApplication.class, args);
     }
 
     @Bean
