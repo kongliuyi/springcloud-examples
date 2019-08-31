@@ -10,7 +10,7 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone: http://eureka7001:7001/eureka
+      defaultZone: http://localhost:7001/eureka
     #该应用为注册中心，不会注册自己,默认true
     register-with-eureka: true
     #是否需要从eureka上获取注册信息,默认true

@@ -11,7 +11,7 @@ eureka:
     eviction-interval-timer-in-ms: 2000
   instance:
     #注册到eureka的ip地址
-    hostname: eureka7001
+    hostname: localhost
   client:
     serviceUrl:
       #设置与Eureka Server交互的地址查询服务和注册服务都需要依赖这个地址（单机）。
