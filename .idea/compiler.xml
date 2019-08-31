@@ -35,8 +35,6 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="consumer-ribbon" target="1.8" />
-      <module name="eureka-consumer" target="1.8" />
-      <module name="eureka-provider" target="1.8" />
       <module name="provider" target="1.8" />
     </bytecodeTargetLevel>
   </component>
