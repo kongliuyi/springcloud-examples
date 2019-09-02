@@ -15,6 +15,7 @@
         <module>hystrix-dashboard-turbine</module>
         <module>config-bus-server</module>
         <module>feign-client</module>
+        <module>sleuth-zipkin</module>
     </modules>
 
     <parent>

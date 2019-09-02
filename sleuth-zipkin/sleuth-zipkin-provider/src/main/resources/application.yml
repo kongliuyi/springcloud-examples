@@ -1,11 +1,19 @@
 #服务启动端口号
 server:
-  port: 9001
+  port: 8001
 
 #服务名称(服务注册到eureka名称)
 spring:
   application:
-    name: consumer
+    name: provider
+  zipkin:
+    base-url: http://192.168.177.129:9411/
+  ##sleuth采样率，默认为0.1，值越大收集越及时，但性能影响也越大
+  sleuth:
+    sampler:
+      probability: 1.0
+
+
 #客户端注册进eureka服务列表内
 eureka:
   client:
@@ -15,3 +23,7 @@ eureka:
     register-with-eureka: true
     #是否需要从eureka上获取注册信息,默认true
     fetch-registry: true
+
+ 
+
+
