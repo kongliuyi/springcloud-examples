@@ -1,5 +1,5 @@
 server:
-  port: 9004
+  port: 9001
 
 spring:
   application:
@@ -13,6 +13,6 @@ eureka:
 
 feign:
   hystrix:
-    enabled: true
+    enabled: true   #开启断路器， 缺省值为false
 
 

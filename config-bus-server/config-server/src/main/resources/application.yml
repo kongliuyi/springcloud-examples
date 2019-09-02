@@ -12,10 +12,10 @@ spring:
     #注册中心应用名称
     name: config-server
   rabbitmq:
-    host: 192.168.36.133
-    port: 5672
-    username: guest
-    password: guest
+    host: ${RABBIT_MQ_HOST:192.168.177.129}
+    port: ${RABBIT_MQ_PORT:5672}
+    username: ${RABBIT_MQ_USERNAME:guest}
+    password: ${RABBIT_MQ_PASSWORD:guest}
   cloud:
     config:
       server:

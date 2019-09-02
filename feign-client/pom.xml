@@ -10,6 +10,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>feign-client</artifactId>
-
+    <packaging>pom</packaging>
+    <modules>
+        <module>feign-eureka</module>
+        <module>feign-consumer</module>
+        <module>feign-provider</module>
+    </modules>
 
 </project>

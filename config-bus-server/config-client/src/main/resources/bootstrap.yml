@@ -1,6 +1,6 @@
 #服务启动端口号
 server:
-  port: 9010
+  port: 9002
 
 #服务名称(服务注册到eureka名称)
 spring:
@@ -15,14 +15,14 @@ spring:
       discovery:
         service-id: config-server
         enabled: true
-  bus:
-    trace:
-      enabled: true
+  #bus:
+    #trace:
+     # enabled: true
   rabbitmq:
-    host: 192.168.36.133
-    port: 5672
-    username: guest
-    password: guest
+    host: ${RABBIT_MQ_HOST:192.168.177.129}
+    port: ${RABBIT_MQ_PORT:5672}
+    username: ${RABBIT_MQ_USERNAME:guest}
+    password: ${RABBIT_MQ_PASSWORD:guest}
 
 #客户端注册进eureka服务列表内
 eureka:
